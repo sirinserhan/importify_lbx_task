@@ -7,6 +7,7 @@ This project is an example of the test API requested by LBX. In this document, y
 - PHP 8.1+
 - MySQL 5.7+
 - Node 9+ for npm
+- If you intend to load 10 thousand rows of data in a csv file, please increase the max_execution_time and max_input_time values ​​in the php.ini file.
 
 ## Installation
 
@@ -208,3 +209,76 @@ While this API project currently fulfills its intended purpose efficiently, ther
    Continuously update and expand the project's documentation. Well-documented APIs are easier for developers to understand and integrate into their applications.
 
 These are just a few ideas to consider for future enhancements and refinements of the API project. The direction you choose will depend on the evolving needs of your application and its users.
+
+## Example upload of import.csv and response:
+`{
+    "message": "CSV import completed.",
+    "success_count": 9936,
+    "error_count": 64,
+    "errors": [
+        "Validation Error for employee_id: 147663. Fields: age_in_company_years. Errors: The age in company years must be a number.",
+        "Validation Error for employee_id: ok. Fields: employee_id. Errors: The employee id must be an integer.",
+        "Validation Error for employee_id: 945178. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 467080. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 517476. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 281376. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 173479. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 254060. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 581148. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 989007. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 961538. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 806216. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 968722. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 535207. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 401576. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 521398. Fields: user_name. Errors: The user name has already been taken.",
+        "Validation Error for employee_id: 505192. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 577588. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 528467. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 741457. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 425467. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 766480. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 315817. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 724623. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 772917. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 992731. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 248678. Fields: user_name. Errors: The user name has already been taken.",
+        "Validation Error for employee_id: 891653. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 469204. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 177006. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 214099. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 115718. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 437622. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 556707. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 562522. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 482012. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 443835. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 195200. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 439490. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 874818. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 232476. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 695651. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 576333. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 421181. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 637227. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 816839. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 365479. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 992780. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 571027. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 947619. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 721695. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 273911. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 308771. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 449321. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 602809. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 907997. Fields: user_name. Errors: The user name has already been taken.",
+        "Validation Error for employee_id: 768767. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 955733. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 272630. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 609056. Fields: user_name. Errors: The user name has already been taken.",
+        "Validation Error for employee_id: 609307. Fields: user_name. Errors: The user name has already been taken.",
+        "Validation Error for employee_id: 510897. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 758783. Fields: employee_id. Errors: The employee id has already been taken.",
+        "Validation Error for employee_id: 631859. Fields: employee_id. Errors: The employee id has already been taken."
+    ]
+}`
