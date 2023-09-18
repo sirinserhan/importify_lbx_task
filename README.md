@@ -208,8 +208,6 @@ While this API project currently fulfills its intended purpose efficiently, ther
 8. Documentation
    Continuously update and expand the project's documentation. Well-documented APIs are easier for developers to understand and integrate into their applications.
 
-These are just a few ideas to consider for future enhancements and refinements of the API project. The direction you choose will depend on the evolving needs of your application and its users.
-
 ## Example upload of import.csv and response:
 `{
     "message": "CSV import completed.",
