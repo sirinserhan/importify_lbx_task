@@ -6,6 +6,7 @@ This project is an example of the test API requested by LBX. In this document, y
 
 - PHP 8.1+
 - MySQL 5.7+
+- Node 9+ for npm
 
 ## Installation
 
@@ -42,7 +43,17 @@ php artisan migrate
 php artisan db:seed
 ```
 
-8. Start project:
+8. npm install:
+```
+npm install
+```
+
+9. Run build:
+```
+npm run build
+```
+
+10. Start project:
 ```
 php artisan serve
 ```
