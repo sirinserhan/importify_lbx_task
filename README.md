@@ -11,12 +11,12 @@ This project is an example of the test API requested by LBX. In this document, y
 
 1. Clone this project to your local machine:
 ```
-git clone https://github.com/yourusername/lbx-test-api.git
+git clone https://github.com/sirinserhan/importify_lbx_task.git
 ```
 
 2. Navigate to the project directory:
 ```
-cd lbx-test-api
+cd importify_lbx_task
 ```
 
 3. Install dependencies:
